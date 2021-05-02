@@ -1,0 +1,84 @@
+{% extends "e_app/base.html" %}
+{% load static %}
+{% block body_block %}
+
+<div class="container">
+  
+    <div class="row">
+      <div class="col-lg-4">
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'images/web.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Full stack django web development</h5>
+            <p class="card-text">This is a full stack web development using python and django.</p>
+            <form enctype="multipart/form-data" method="POST">
+              {% csrf_token %}
+              <input type="submit" class="btn btn-primary" name="Full stack django web development" value="Register">
+            </form>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-lg-4">
+      <div class="card border-info mb-3" style="max-width: 18rem;">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'images/machine.jpeg' %}" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Introduction to Machine learning</h5>
+              <p class="card-text">This is a introductory course for Machine learning</p>
+              <form enctype="multipart/form-data" method="POST">
+                {% csrf_token %}
+                <input type="submit" class="btn btn-primary" name="Introduction to Machine learning" value="Register">
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        
+    
+      <div class="col-lg-4">
+    <div class="card border-info mb-3" style="max-width: 18rem;">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{% static 'images/app.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Flutter and Dart beginners guide</h5>
+            <p class="card-text">This is a beginner tutorial for flutter and dart .</p>
+            <form enctype="multipart/form-data" method="POST">
+              {% csrf_token %}
+              <input type="submit" class="btn btn-primary" name="Flutter and Dart beginners guide" value="Register">
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+   
+      <div class="col-lg-4">
+        <div class="card border-info mb-3" style="max-width: 18rem;">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="{% static 'images/python.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Python bootcamp</h5>
+                <p class="card-text">In this course you will learn python from basic to advanced.</p>
+                <form enctype="multipart/form-data" method="POST">
+                  {% csrf_token %}
+                  <input type="submit" class="btn btn-primary" name="Python bootcamp" value="Register">
+                </form>
+              </div>
+            </div>
+          </div>
+          </div>
+        
+    
+     
+
+    
+    
+  
+</div>
+
+{% endblock %}
